@@ -15,17 +15,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>디에스희망병원</title>
   </head>
   <body>
     <header id="navbar">
-      <a href="#" class="logo">
+      <a href="#" class="navbar_logo">
         <i class="fa-brands fa-drupal"></i>디에스 희망 병원
       </a>
       <nav class="menu">
@@ -75,24 +76,26 @@
     </section>
     <!-- Images -->
     <section id="images">
-      <h1>내과 소개</h1>
-      <p class="images_desc">
-        의학에서 내시경은 질병의 진단과 치료 목적으로 신체의 내부를 관찰하기
-        위한 장비이다. 관찰 부위와 목적에 따라 분류되며 관찰 부위에 따른
-        분류에는 위내시경, 대장내시경, 기관지내시경, 복강경이 있으며 목적에
-        따라서는 크게 진단내시경과 치료내시경으로 나누어진다.
-      </p>
+      <div class="images_content">
+        <h1>병원 센터</h1>
+        <p class="images_desc">
+          의학에서 내시경은 질병의 진단과 치료 목적으로 신체의 내부를 관찰하기
+          위한 장비이다. 관찰 부위와 목적에 따라 분류되며 관찰 부위에 따른
+          분류에는 위내시경, 대장내시경, 기관지내시경, 복강경이 있으며 목적에
+          따라서는 크게 진단내시경과 치료내시경으로 나누어진다.
+        </p>
+      </div>
       <ul class="images_container">
         <li class="image_card">
           <img src="images/pic_1.jpg" alt="hospital_image" />
           <p>일반 내과</p>
         </li>
         <li class="image_card">
-          <img src="images/pic_2.jpg" alt="hospital_image" />
+          <img src="images/pic_3.jpg" alt="hospital_image" />
           <p>건강 검진 센터</p>
         </li>
         <li class="image_card">
-          <img src="images/pic_3.jpg" alt="hospital_image" />
+          <img src="images/pic_2.jpg" alt="hospital_image" />
           <p>수술방</p>
         </li>
         <li class="image_card">
@@ -103,7 +106,7 @@
     </section>
 
     <!-- Wide image -->
-    <section class="wide">
+    <section id="wide">
       <h2>
         소화기내과는 임상분과이기 때문에 기본적으로는 내과 질환을 가진 환자들을
         진단하고 치료하기 위한 연구를 진행하고 있다.
@@ -128,16 +131,14 @@
             <p>소화기내과 전문의 | 의학박사</p>
             <button>자세히보기</button>
           </div>
-        </div>
-        <img src="images/doctor_2.jpg" alt="doctor" />
-        <div class="doctors_btns">
-          <button class="left_btn">
+          <button class="doctors_btns left_btn">
             <i class="fa-solid fa-chevron-left"></i>
           </button>
-          <button class="right_btn">
+          <button class="doctors_btns right_btn">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
+        <img src="images/doctor_3.jpg" alt="doctor" />
       </div>
     </section>
 
@@ -190,7 +191,7 @@
     <section id="info">
       <h1>병원 정보</h1>
       <div class="info_containter">
-        <img src="images/" alt="info_image" />
+        <img src="images/map.png" alt="info_image" />
         <div class="info_contents">
           <div class="info_time">
             <h3>진료 시간</h3>
@@ -214,7 +215,7 @@
             </ul>
           </div>
           <div class="info_num">
-            <h5>문의</h5>
+            <h3>문의</h3>
             <p>1577-0000</p>
           </div>
         </div>
